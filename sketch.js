@@ -37,4 +37,3 @@ const imag = localStorage.getItem("prf");
 $("#me").attr("src", imag);
 $("#me2").attr("src", imag);
 $("#me3").attr("src", imag);
-
