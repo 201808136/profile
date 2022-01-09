@@ -2,6 +2,10 @@
 
 
 /*Definições gerais*/
+img{
+  border-radius: 50%;
+}
+
 body{
     font-family: 'Archivo', sans-serif;
     margin: 0;
