@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62,100;125,900&display=swap');
+
+
+/*Definições gerais*/
+body{
+    font-family: 'Archivo', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-variation-settings: 'wght' 200, 'wdth' 105;
+    color: rgb(75, 80, 73);
+  }
+
+	#main {
+        margin-left: 300px;
+        width: 400px;
+        margin-top:100px;
+        }
+    
+        h1 {
+        z-index: -1;
+        font-variation-settings: 'wght' 600, 'wdth' 100;
+        text-transform: uppercase;
+        font-size: 28px;
+        margin-bottom: 10px;
+        }
+    
+        h2 {
+        font-size:18px;
+        }
+    
+        .logo img {
+        position: absolute;
+        top: 90px;
+        right: 100px;
+        width: 170px;
+        height: 170px;
+        }
+    
+        a {
+        text-decoration: none;
+        }
+    
+        p,  button {
+        font-size: 17px;
+        }
+    
+        button{
+            text-align: center;
+            font-variation-settings: 'wght' 300, 'wdth' 105;
+            padding: 15px;
+            background-color: #e0cbc5;
+            border: none;
+            color: rgb(75, 80, 73);
+            font-family: 'Archivo', sans serif;
+            cursor: pointer;
+        }
+
+        .data{
+          font-size: 12px;
+        }
+
+  /*Menu*/
+
+/*menu mobile*/
+  #mobilenav{
+    display: none;
+  }
+
+  /*menu "normal"*/
+	.selector_home {
+    background: #999B84;
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    }
+  
+    .selector_profile {
+    background: #999B84;
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    top: 195px;
+    left: 0;
+    }
+  
+    .selector_about {
+    background: #999B84;
+    width: 10px;
+    height: 70px;
+    position: absolute;
+    top: 330px;
+    left: 0;
+    }
+  
+    aside {
+    position: fixed;
+    margin-top:60px;
+    margin-left: 0px;
+    }
+  
+    ul li {
+    list-style:none;
+    margin-left: -10px;
+    }
+  
+    ul li a {
+    padding-bottom: 50px;
+    padding-top: 55px;
+    display:block;
+    text-decoration: none;
+    font-weight: 600;	
+    }
+  
+    ul img{
+      width: 35px;
+      height: 35px;
+    }
+
+
+/*Profile*/
+#bdg{
+  display: inline-grid;
+  grid-template-columns: auto auto auto;
+}
+
+#savep, #gob{
+  position: absolute;
+}
+
+#savep{
+  margin-left: 100px;
+}
+
+#gob{
+  margin-left: 180px;
+}
+
+
+/*Tablet*/
+@media screen and (max-width: 1080px) {
+
+  /*Definições Gerais*/
+	.logo img{
+		width: 120px;
+		height: 120px;
+    margin-top: -50px;
+    margin-right: -50px;
+	}
+
+	#main{
+		margin-left: 150px;
+	}
+}
+
+/*Telemóvel*/
+@media screen and (max-width: 600px){
+
+  /*Definições gerais*/
+ body{
+   overflow: hidden;
+ }
+
+#main{
+	width: 90%;
+	margin-left: 10%;
+}
+
+.logo img{
+	width: 80px;
+	height: 80px;
+top: 80px;
+right: 80px;
+}
+
+
+ /*Menu*/
+.icons{
+		width: 35px;
+		height: 35px;
+    margin-bottom: -35px;
+	} 
+
+#mobilenav{
+	width: 100%;
+	height: 110px;
+	left: 0;
+	bottom: 0;
+	display: block;
+  position: fixed;
+}
+
+#mobilenav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	height: 100px;
+	padding: 0;
+	margin: 0;
+}
+
+#mobilenav li{
+	padding: 0;
+}
+
+#mobilenav a{
+	padding: 0;
+}
+
+aside{
+	display: none;
+}
+
+#bar_home{
+	width: 100%;
+	height: 10px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#color, .blank{
+width: 45px;
+height: 10px;
+}
+
+#color{
+	background-color: #9a9c7d;
+}
+
+
+
+/*Diminuir altura*/
+@media screen and (max-height: 800px){
+
+  /*Definições gerais*/
+	#main{
+  position: absolute;
+  top: -65px;
+  }
+
+  /*Profile*/
+#perfil, #logout, #change{
+  scale: 0.8;
+  margin-left: -20px;
+}
+
+#inf{
+  margin-top: -20px;
+}
+
+#logout, #change{
+  position: absolute;
+  margin-top: -50px;
+}
+
+#logout{
+  margin-left: -6px;
+}
+
+#change{
+  margin-left: 76px;
+}
+
+#savep, #gob{
+  position: absolute;
+  scale: 0.8;
+  margin-top: -50px;
+}
+
+#savep{
+  margin-left: 90px;
+}
+
+#gob{
+ margin-left: 170px;
+}
+}
+
+
+/*Diminuir mais o ecrâ*/
+@media screen and (max-height: 670px){
+
+   /*Profile*/
+
+#perfil, #logout, #change{
+  scale: 0.6;
+  margin-left: -40px;
+}
+
+#inf{
+  margin-top: -35px;
+}
+
+#logout, #change{
+  margin-top: -70px;
+}
+
+#savep, #gob{
+  scale: 0.6;
+  margin-top: -70px;
+}
+
+#logout{
+  margin-left: -16px;
+}
+
+#change{
+  margin-left: 56px;
+}
+
+#aboutme{
+  scale: 0.8;
+  margin-left: -43px;
+  margin-top: -20px;
+}
+
+}
+}
+
+
+/*Mais pequeno*/
+@media screen and (max-width: 350px){
+	.prompts, .moods, .habits, .challenges{
+		width: 38%;
+		height: 120px;
+	}
+	#options p{
+		padding: 35px 0;
+		font-size: 12px;
+	}
+}
+
