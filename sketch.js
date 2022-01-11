@@ -27,6 +27,7 @@ function setup() {
     //mudar o css das imagens para o data da imagem criada
     $("#me").attr("src", image64);
     $("#me2").attr("src", image64);
+    $("#me3").attr("src", image64);
 //fazer o video desaparecer depois de tirar a fotografia
     $("video").remove();
   });
